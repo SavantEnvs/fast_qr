@@ -1,0 +1,9 @@
+# Mayhem project SLUG (the platform slugifies 'fast_qr' -> 'fast-qr'; the existing 2023
+# project + run history live under the slug, and the server-tar access check resolves the
+# literal name, so the slug form is required for $MAYHEM_PROJECT/testsuite.tar to load).
+project: savantenvs/fast-qr
+target: fastqr-fuzz-buggy-mhh-run-5
+cmds:
+  - cmd: /mayhem/fastqr_fuzz
+    libfuzzer: true
+# origin: https://app.mayhem.security/mayhemheroes/fast-qr/fastqr-fuzz/5
